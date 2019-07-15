@@ -138,7 +138,14 @@ body {
   margin-left: 0;
 }
 
+.pesonal-info  .text {
+  font-size: 24px;
+}
 
+.pesonal-info  .text a {
+  text-transform: none;
+  text-decoration: none;
+}
 
 
 
