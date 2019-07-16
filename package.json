@@ -1,0 +1,15 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "My personal site",
+  "author": {
+    "name": "Christos Nasikas",
+    "email": "xristosnasikas@gmail.com",
+    "url": "https://christosnasikas.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cnasikas/christosnasikas.com.git"
+  },
+  "license": "MIT"
+}
