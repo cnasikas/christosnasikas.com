@@ -1,0 +1,31 @@
+.pesonal-info {
+  display: flex;
+  list-style: none;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+
+  * > {
+    margin-left: 25px;
+
+    :first-child {
+      margin-left: 0;
+    }
+  }
+
+  a {
+    color: #000;
+  }
+
+  .text {
+    font-size: 24px;
+  
+    a {
+      text-transform: none;
+      text-decoration: none;
+    }
+  }
+
+}

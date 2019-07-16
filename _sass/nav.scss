@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+    align-items: center;
+
+    li {
+      margin-left: 25px;
+    }
+  }
+}
