@@ -4,3 +4,10 @@ slug: projects
 ---
 
 <h2>Projects</h2>
+
+{% for project in site.projects %}
+  <h3>
+    <a href="{{ project.link }}">{{ project.title }}</a>
+  </h3>
+  {{ project.content }}
+{% endfor %}
