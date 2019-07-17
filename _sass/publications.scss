@@ -1,0 +1,21 @@
+.publication {
+  display: flex;
+  align-items: baseline;
+
+  .publication-wrapper {
+    padding-left: 15px;
+  }
+
+  .abstract {
+    margin-top: 15px;
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

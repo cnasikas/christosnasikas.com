@@ -1,6 +1,27 @@
 ---
 layout: default
-slug: publications 
+slug: publications
 ---
 
 <h2>Publications</h2>
+
+<section class="publications">
+  {% for publication in site.publications %}
+    <article class="publication">
+      <div class="index">
+        [{{ forloop.index }}]
+      </div>
+      <div class="publication-wrapper">
+        <div class="info">
+          <a href="{{ publication.link }}" target="_blank" class="no-link">
+            {{ publication.author }}. {{ publication.title }}. {{ publication.journal }}. {{ publication.year }}.
+          </a>
+        </div>
+        <div class="abstract">
+          <h4>Abstract</h4>
+          <p>{{ publication.content }}</p>
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</section>
