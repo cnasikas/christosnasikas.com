@@ -7,7 +7,7 @@ slug: projects
 
 {% for project in site.projects %}
   <h3>
-    <a href="{{ project.link }}">{{ project.title }}</a>
+    <a href="{{ project.link }}" class="no-link" target="_blank">{{ project.title }}</a>
   </h3>
   {{ project.content }}
 {% endfor %}
