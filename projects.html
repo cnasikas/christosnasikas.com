@@ -4,10 +4,15 @@ slug: projects
 ---
 
 <h2>Projects</h2>
-
-{% for project in site.projects %}
-  <h3>
-    <a href="{{ project.link }}" class="no-link" target="_blank">{{ project.title }}</a>
-  </h3>
-  {{ project.content }}
-{% endfor %}
+<section class="projects">
+  {% for project in site.projects %}
+  <article class="project">
+    <h3>
+      <a href="{{ project.link }}" class="no-link" target="_blank">{{ project.title }}</a>
+    </h3>
+    <div>
+      {{ project.content }}
+    </div>
+  </article>
+  {% endfor %}
+</section>
