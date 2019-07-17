@@ -30,3 +30,11 @@ keep_files:
   - .svn
 encoding: "utf-8"
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
