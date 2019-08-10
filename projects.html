@@ -3,14 +3,29 @@ layout: default
 slug: projects
 ---
 
+{% assign web = site.projects | where: 'category', 'web' %}
+{% assign sticky = site.projects | where: 'category', 'research' %}
+
 <h2>Projects</h2>
-<section class="projects">
-  {% for project in site.projects %}
+<section class="projects sticky">
+  {% for project in sticky %}
   <article class="project">
-    <h3>
+    <h3 class="project-title">
       <a href="{{ project.link }}" class="no-link" target="_blank">{{ project.title }}</a>
     </h3>
-    <div>
+    <div class="project-content">
+      {{ project.content }}
+    </div>
+  </article>
+  {% endfor %}
+</section>
+<section class="projects">
+  {% for project in web %}
+  <article class="project">
+    <h3 class="project-title">
+      <a href="{{ project.link }}" class="no-link" target="_blank">{{ project.title }}</a>
+    </h3>
+    <div class="project-content">
       {{ project.content }}
     </div>
   </article>
