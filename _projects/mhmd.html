@@ -11,6 +11,7 @@ category: research
 <p>
   Our goal at <a target="_blank" href="https://www.athena-innovation.gr/en">ATHENA RC</a> was to build a Secure Multiparty Computation (SMPC) Infrastructure
   where a researcher can request for secure computations over specific datasets. The system is composed of three main entities: coordinator, smpc node, and data provider node.
+  The components are sychronized by the coordinator by running a distributed protocol.
 </p>
 <p>
   Our core MPC system lies in <a target="_blank" href="https://github.com/KULeuven-COSIC/SCALE-MAMBA">SCALE-MAMBA</a>. SCALE-MAMBA assumes that the data
@@ -24,21 +25,10 @@ category: research
   based on various events. The protocol is implemented in C++.
 </p>
 <p>
-  The <a target="_blank" href="https://github.com/athenarc/smpc-coordinator">coordinator</a> is responsible for accepting computation requests (through a RESTful API) and coordinate data providers
-  and computation nodes (with the use of WebSockets) during the execution and fulfillment of the request. The coordinator is implemented in NodeJS.
-</p>
-<p>
-  The <a href="https://github.com/athenarc/smpc-player" target="_blank">SMPC computation node</a> is responsible for compiling MPC programs and initiate
-  SCALE-MAMBA nodes. It always acts as instructed by the coordinator. The SMPC computation node is implemented in NodeJS.
-</p>
-<p>
-  The <a href="https://github.com/athenarc/smpc-local-driver" target="_blank">data provider node</a> is responsible for preparing the dataset in a suitable
-  form as needed for the importer and initiate the client node of the importer. It always acts as instructed by the coordinator.
-  The SMPC computation node is implemented in NodeJS and the data processing module in Python.
-</p>
-
-<p>
   The work in this project was supported by <a target="_blank" href="https://www.athena-innovation.gr/en">"Athena" RC</a> and partially supported by
   the <a target="_blank" href="https://ec.europa.eu/programmes/horizon2020/en/">European Union’s Horizon 2020</a> research and innovation programme
   under grant agreement No. 732907 (<a target="_blank" href="http://www.myhealthmydata.eu/why-mhmd/">My Health, My Data</a>).
+</p>
+<p>
+  Build with: Node.js, React, Python, WebSockets, C++ and SCALE-MAMBA (SMPC).
 </p>
